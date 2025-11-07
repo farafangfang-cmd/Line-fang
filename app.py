@@ -177,7 +177,7 @@ def handle_unsend(event):
                 f"[ ภาพที่ถูกยกเลิก ]\n"
                 f"• ผู้ส่ง: {display_name}\n"
                 f"• เวลา: {timestamp}\n"
-                f"• ภาพ: (ส่งภาพต้นฉบับกลับมา)"
+                f"• ภาพ: "
             )
             url = f"https://{YOUR_DOMAIN}/images/{os.path.basename(image_path)}"
             line_bot_api.push_message(group_id, [
